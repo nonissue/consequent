@@ -7,7 +7,10 @@ type HeaderLinkProps = {
 
 const HeaderLink = ({ title, href }: HeaderLinkProps) => {
   return (
-    <div className="text-xs sm:text-lg font-mono">
+    <div
+      className="text-xs sm:text-base font-sans
+    hover:text-radix-crimson10"
+    >
       <Link href={href}>{title}</Link>
     </div>
   );
