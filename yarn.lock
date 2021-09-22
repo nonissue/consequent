@@ -401,6 +401,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@radix-ui/colors@^0.1.7":
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@radix-ui/colors/-/colors-0.1.7.tgz#055cdf104f92ae58a7d6a7f1c7327c635b90747f"
+  integrity sha512-E6+ZPQ+FFn1/NZ4c/KRvZTu9KjC/MXrbJNETYs1HKe96gyxQivPu65FkhOsRnPigvJ0YJ9ZxYGxayqDNmaC1cQ==
+
 "@radix-ui/popper@^0.0.10":
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/@radix-ui/popper/-/popper-0.0.10.tgz#9f707d9cec8762423f81acaf8e650e40a554cb73"
@@ -3599,6 +3604,14 @@ quick-lru@^5.1.1:
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-5.1.1.tgz#366493e6b3e42a3a6885e2e99d18f80fb7a8c932"
   integrity sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==
 
+radix-colors-for-tailwind@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/radix-colors-for-tailwind/-/radix-colors-for-tailwind-2.0.0.tgz#df9ee4739e36dc2cdbd43655f61baa96f43a5f7d"
+  integrity sha512-8F9jJXU6z26Gvd8DAFomBAJ8ZP8oyjqIrO+JuEOnX2PKdNebAed9KaETjl6Ff3dMb2grElkk1M80F6qhHubhQQ==
+  dependencies:
+    "@radix-ui/colors" "^0.1.7"
+    tailwindcss "^2.2.4"
+
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/randombytes/-/randombytes-2.1.0.tgz#df6f84372f0270dc65cdf6291349ab7a473d4f2a"
@@ -4168,7 +4181,7 @@ table@^6.0.9:
     string-width "^4.2.0"
     strip-ansi "^6.0.0"
 
-tailwindcss@^2.2.7:
+tailwindcss@^2.2.4, tailwindcss@^2.2.7:
   version "2.2.15"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-2.2.15.tgz#8bee3ebe68b988c050508ce20633f35b040dd9fe"
   integrity sha512-WgV41xTMbnSoTNMNnJvShQZ+8GmY86DmXTrCgnsveNZJdlybfwCItV8kAqjYmU49YiFr+ofzmT1JlAKajBZboQ==

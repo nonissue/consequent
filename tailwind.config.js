@@ -212,5 +212,11 @@ module.exports = {
       typography: ["dark"],
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    // only problem with radix-colors is lack of color preview in vscode
+    require("radix-colors-for-tailwind")({
+      colors: ["blue", "cyan", "lime", "crimson"],
+    }),
+  ],
 };
