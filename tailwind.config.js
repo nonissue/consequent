@@ -1,7 +1,4 @@
 /* eslint-disable */
-
-const radixDark = require("./plugins/radix-colors/dark");
-const radixLight = require("./plugins/radix-colors/light");
 const colors = require("tailwindcss/colors");
 const defaultTheme = require("tailwindcss/defaultTheme");
 
@@ -25,10 +22,6 @@ module.exports = {
         bluegray: colors.blueGray,
         almostblack: "hsl(221, 30%, 7%)",
         red: colors.red,
-        darkRadixRed: radixDark.red,
-        lightRadixRed: radixLight.red,
-        darkRadixTomato: radixDark.tomato,
-        lightRadixTomato: radixLight.tomato,
         orange: colors.orange,
         green: colors.green,
         pink: colors.pink,
@@ -38,52 +31,12 @@ module.exports = {
         amber: colors.amber,
         sky: colors.sky,
         white: "#fff",
-        mint: radixDark.mint,
-        lime: radixDark.lime,
-        limeLight: radixLight.lime,
-        limeA: radixDark.limeA,
-        amber: radixDark.amber,
-        crimson: radixDark.crimson,
       },
       fontSize: {
         xxs: ".625rem",
       },
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
-        display: ["Space Grotesk", ...defaultTheme.fontFamily.sans],
-        display2: ["Space Mono", ...defaultTheme.fontFamily.sans],
-        mono: [
-          "SFMono-Regular",
-          "ui-monospace",
-          "Menlo",
-          "Monaco",
-          "Consolas",
-          "Liberation Mono",
-          "Courier New",
-          "monospace",
-        ],
-        label: [
-          "Recursive",
-          "ui-monospace",
-          "SFMono-Regular",
-          "Menlo",
-          "Monaco",
-          "Consolas",
-          "Liberation Mono",
-          "Courier New",
-          "monospace",
-        ],
-        "label-mono": [
-          "Recursive",
-          "ui-monospace",
-          "SFMono-Regular",
-          "Menlo",
-          "Monaco",
-          "Consolas",
-          "Liberation Mono",
-          "Courier New",
-          "monospace",
-        ],
       },
       typography: (theme) => ({
         // https://sergiodxa.com/articles/use-tailwindcss-typography-with-dark-mode-styles
@@ -93,20 +46,19 @@ module.exports = {
             color: theme("colors.gray.800"),
             a: {
               transition: "all 0.15s ease-in",
-              color: theme("colors.lightRadixRed.red11"),
-              background: theme("colors.lightRadixRed.red4"),
-              lineHeight: `1.7`,
+              color: theme("colors.radix.red11"),
+              background: theme("colors.radix.red4"),
+              lineHeight: `1.6`,
               display: "inline-block",
               "text-decoration": "none",
-              "&:hover, &.active": {
-                color: theme("colors.lightRadixRed.red12"),
-                background: theme("colors.lightRadixRed.red3"),
-              },
-              "text-decoration": "none",
+              fontWeight: "false",
               paddingRight: `${theme("padding[1]")}`,
               paddingLeft: `${theme("padding[1]")}`,
-              fontWeight: "false",
-              display: "inline-block",
+
+              "&:hover, &.active": {
+                color: theme("colors.radix.red1"),
+                background: theme("colors.radix.red10"),
+              },
             },
             h1: { color: theme("colors.gray.800") },
             h2: {
@@ -125,13 +77,14 @@ module.exports = {
               color: theme("colors.gray.500"),
               fontSize: "0.9em",
               lineHeight: `1.8em`,
+
               "& a": {
                 display: "inline",
                 padding: `0px !important`,
                 background: `${theme("colors.transparent")} !important`,
 
                 "&:hover, &.active": {
-                  color: theme("colors.lightRadixRed.red12"),
+                  color: theme("colors.radix.red12"),
                 },
               },
             },
@@ -149,15 +102,13 @@ module.exports = {
         },
         dark: {
           css: {
-            color: theme("colors.gray.900"),
+            color: theme("colors.gray.200"),
             a: {
-              color: theme("colors.lightRadixRed.red6"),
-              background: theme("colors.darkRadixRed.red4"),
-              "text-decoration": "none",
-
+              // color: theme("colors.radix.red10"),
+              // background: theme("colors.radix.red4"),
               "&:hover, &.active": {
-                color: theme("colors.lightRadixRed.red3"),
-                background: theme("colors.darkRadixRed.red7"),
+                color: theme("colors.radix.red12"),
+                background: theme("colors.radix.red7"),
               },
             },
             h1: {
@@ -178,8 +129,9 @@ module.exports = {
 
               "& a": {
                 background: `${theme("colors.transparent")} !important`,
+
                 "&:hover, &.active": {
-                  color: theme("colors.darkRadixRed.red12"),
+                  color: theme("colors.radix.red12"),
                 },
               },
             },
@@ -214,9 +166,8 @@ module.exports = {
   },
   plugins: [
     require("@tailwindcss/typography"),
-    // only problem with radix-colors is lack of color preview in vscode
     require("radix-colors-for-tailwind")({
-      colors: ["blue", "cyan", "lime", "crimson"],
+      colors: ["blue", "cyan", "lime", "crimson", "tomato", "red"],
     }),
   ],
 };

@@ -7,7 +7,7 @@ const IndexPage: NextPage & {
 } = () => {
   return (
     <>
-      <section className="prose prose-lg lg:prose-2xl dark:prose-dark text-lightRadixTomato-tomato7  ">
+      <section className="prose prose-lg lg:prose-2xl dark:prose-dark">
         <p>
           Hi! I&apos;m Andy Williams. I am a Computer Science student{" @ "}
           <Link href="https://macewan.ca">
@@ -52,7 +52,6 @@ const IndexPage: NextPage & {
           .
         </h5>
       </section>
-      <p className="text-radix-crimson11">Test</p>
     </>
   );
 };
