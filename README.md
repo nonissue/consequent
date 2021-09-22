@@ -6,10 +6,20 @@ Next.js starter with Typescript & Tailwind.css (feat. `next-themes` for dark mod
 
 ### Misc
 
+- [ ] Use `data/site.config.json` in `Header`
+- [ ] Add `Husky`
+  - [ ] Add package
+  - [ ] Add pre-commit
+  - [ ] Add post-merge
+- [ ] Add `zustand`
+  - [ ] Add package
+  - [ ] Remove custom `context` implementation currently being used
+- [ ] Cleanup `eslint` config
+- [ ] Figure out color preview for radix-colors
 - [ ] Fix paths in `tsconfig.json`
   - Just use relative imports?
-- [ ] Cleanup `tailwind.config.js`
-  - [ ] ~~Remove prose customizations~~
+- [x] Cleanup `tailwind.config.js`
+  - [x] ~~Remove prose customizations~~
     - Eh, I like the prose customizations.
     - Though if I use radix-colors plugin, it automatically changes color variant between light/dark
   - [x] Remove homemade radix plugin
@@ -18,14 +28,16 @@ Next.js starter with Typescript & Tailwind.css (feat. `next-themes` for dark mod
   - [x] Remove `Space Mono`
   - [x] Remove `Space Grotesk`
   - [x] Cleanup `tailwind` config
-- [ ] Use `data/site.config.json` in `Header`
-- [ ] Add `Husky`
-- [ ] Add `zustand`
 - [x] Figure out which `postcss` plugins are actually needed
 - [x] Remove unneeded `postcss` plugins
-- [ ] Figure out color preview for radix-colors
 
 ## Inspiration/Resources
+
+### Tailwind Typography: Dark Mode
+
+- https://sergiodxa.com/articles/use-tailwindcss-typography-with-dark-mode-styles
+- Reference custom fontFamily:
+  - https://github.com/tailwindlabs/tailwindcss-typography/issues/14
 
 ### `eslint` config
 

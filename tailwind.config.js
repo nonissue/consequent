@@ -39,8 +39,6 @@ module.exports = {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
       typography: (theme) => ({
-        // https://sergiodxa.com/articles/use-tailwindcss-typography-with-dark-mode-styles
-        // Reference custom fontFamily: https://github.com/tailwindlabs/tailwindcss-typography/issues/14
         DEFAULT: {
           css: {
             color: theme("colors.gray.800"),
@@ -104,8 +102,6 @@ module.exports = {
           css: {
             color: theme("colors.gray.200"),
             a: {
-              // color: theme("colors.radix.red10"),
-              // background: theme("colors.radix.red4"),
               "&:hover, &.active": {
                 color: theme("colors.radix.red12"),
                 background: theme("colors.radix.red7"),
