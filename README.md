@@ -8,15 +8,19 @@ Next.js starter with Typescript & Tailwind.css (feat. `next-themes` for dark mod
   - [ ] Just use relative imports?
 - [ ] Cleanup `tailwind.config.js`
   - [ ] Remove prose customizations
-  - [ ] Remove homemade radix plugin
-- [ ] Only use `Inter` as custom font
-  - [ ] Remove `Recursive`
-  - [ ] Remove `Space Mono`
-  - [ ] Remove `Space Grotesk`
-  - [ ] Cleanup `tailwind` config
+    - [ ] Eh, I like the changes.
+    - [ ] Though if I use radix-colors plugin, it automatically changes color variant between light/dark
+  - [x] Remove homemade radix plugin
+- [x] use only `Inter` as custom font
+  - [x] Remove `Recursive`
+  - [x] Remove `Space Mono`
+  - [x] Remove `Space Grotesk`
+  - [x] Cleanup `tailwind` config
 - [ ] Use `data/site.config.json` in `Header`
 - [ ] Add `Husky`
 - [ ] Add `zustand`
+- [ ] Figure out which `postcss` plugins are actually needed
+- [ ] Figure out color preview for radix-colors
 
 ## Inspiration/Resources
 
