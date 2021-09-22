@@ -45,7 +45,6 @@ module.exports = {
         amber: radixDark.amber,
         crimson: radixDark.crimson,
       },
-
       fontSize: {
         xxs: ".625rem",
       },
@@ -124,9 +123,7 @@ module.exports = {
             },
             h5: {
               color: theme("colors.gray.500"),
-
               fontSize: "0.9em",
-
               lineHeight: `1.8em`,
               "& a": {
                 display: "inline",
@@ -157,6 +154,7 @@ module.exports = {
               color: theme("colors.lightRadixRed.red6"),
               background: theme("colors.darkRadixRed.red4"),
               "text-decoration": "none",
+
               "&:hover, &.active": {
                 color: theme("colors.lightRadixRed.red3"),
                 background: theme("colors.darkRadixRed.red7"),
@@ -179,10 +177,7 @@ module.exports = {
               color: theme("colors.gray.400"),
 
               "& a": {
-                // lineHeight: `calc(0.9em * 1.7)`,
-                // display: "inline-block",
                 background: `${theme("colors.transparent")} !important`,
-
                 "&:hover, &.active": {
                   color: theme("colors.darkRadixRed.red12"),
                 },
@@ -191,6 +186,7 @@ module.exports = {
             code: {
               color: theme("colors.gray.800"),
               "background-color": theme("colors.gray.50"),
+
               "&:before, &:after": {
                 display: "none",
               },
@@ -216,9 +212,5 @@ module.exports = {
       typography: ["dark"],
     },
   },
-  plugins: [
-    require("@tailwindcss/typography"),
-    require("@tailwindcss/forms"),
-    require("@tailwindcss/line-clamp"),
-  ],
+  plugins: [require("@tailwindcss/typography")],
 };
