@@ -1,17 +1,12 @@
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
-/*
-Notes:
-- should honour system theme by default
-- if changed, user pref stored in local storage
-*/
-
 export const ThemeChanger: React.FunctionComponent = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, resolvedTheme, setTheme } = useTheme();
 
-  // When mounted on client, now we can show the UI
+  // Only show theme changer on client when rendered
+  // Avoids hydration mismatch between server & client
   useEffect(() => {
     setMounted(true);
   }, []);

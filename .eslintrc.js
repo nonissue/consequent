@@ -1,7 +1,4 @@
 // .eslintrc.js
-// https://paulintrognon.fr/blog/post/typescript-prettier-eslint-next-js
-// https://www.npmjs.com/package/eslint-config-nextjs
-// https://github.com/vercel/next.js/tree/canary/examples/with-typescript-eslint-jest
 // eslint-disable-next-line no-undef
 module.exports = {
   root: true,
@@ -22,7 +19,7 @@ module.exports = {
     "plugin:@next/next/recommended",
   ],
   rules: {
-    "react/prop-types": "off", // We turn off prop-types rule, as we will use TypeScript's types instead.
+    "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",

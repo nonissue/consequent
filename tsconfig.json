@@ -20,24 +20,12 @@
     "baseUrl": ".",
     "paths": {
       "@/components": ["src/components"],
-      "@/data/*": [
-        "data/*"
-      ],
-      "@/layouts/*": [
-        "src/layouts/*"
-      ],
-      "@/lib/*": [
-        "src/lib/*"
-      ],
-      "@/styles/*": [
-        "src/styles/*"
-      ],
-      "@/types/*": [
-        "src/types/*"
-      ],
-      "@/types": [
-        "src/types/index"
-      ]
+      "@/data/*": ["data/*"],
+      "@/layouts/*": ["src/layouts/*"],
+      "@/lib/*": ["src/lib/*"],
+      "@/styles/*": ["src/styles/*"],
+      "@/types/*": ["src/types/*"],
+      "@/types": ["src/types/index"]
     }
   },
   "exclude": [
