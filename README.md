@@ -6,12 +6,9 @@ Next.js starter with Typescript & Tailwind.css (feat. `next-themes` for dark mod
 
 ### Misc
 
-- [ ] Use `data/site.config.json` in `Header`
-- [x] Remove `@babel/core`
-- [x] Remove `tailwind-typography`
-  - [x] Remove plugin
-  - [x] Remove customization in `tailwind.config.js`
-  - [x] Really shouldn't be customizing styling in tailwind config, it would be easier just to do it from scratch
+- [ ] Add docs
+- [ ] Add favicon, opengraph metadata, etc.
+- [x] Remove `providers` component
 - [ ] Add `Husky`
   - [ ] Add package
   - [ ] Add pre-commit
@@ -23,6 +20,8 @@ Next.js starter with Typescript & Tailwind.css (feat. `next-themes` for dark mod
 - [ ] Figure out color preview for radix-colors
 - [ ] Fix paths in `tsconfig.json`
   - Just use relative imports?
+- [x] ~~Use `data/site.config.json` in `Header`~~
+  - [x] Removed altogether
 - [x] Cleanup `tailwind.config.js`
   - [x] ~~Remove prose customizations~~
     - Eh, I like the prose customizations.
@@ -35,6 +34,11 @@ Next.js starter with Typescript & Tailwind.css (feat. `next-themes` for dark mod
   - [x] Cleanup `tailwind` config
 - [x] Figure out which `postcss` plugins are actually needed
 - [x] Remove unneeded `postcss` plugins
+- [x] Remove `@babel/core`
+- [x] Remove `tailwind-typography`
+  - [x] Remove plugin
+  - [x] Remove customization in `tailwind.config.js`
+  - [x] Really shouldn't be customizing styling in tailwind config, it would be easier just to do it from scratch
 
 ## Inspiration/Resources
 
