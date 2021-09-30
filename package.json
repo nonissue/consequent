@@ -7,12 +7,10 @@
     "build": "next build",
     "start": "next start",
     "type-check": "tsc",
-    "test": "jest",
     "eslint": "node ./node_modules/eslint/bin/eslint.js --ext .ts,.tsx ."
   },
   "dependencies": {
     "@heroicons/react": "^1.0.3",
-    "@tailwindcss/typography": "^0.4.0",
     "next": "^11.1.0",
     "next-themes": "0.0.15",
     "radix-colors-for-tailwind": "^2.0.0",
