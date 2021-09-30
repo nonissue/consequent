@@ -22,7 +22,7 @@ const Contact = () => {
     <section className="bg-white dark:bg-almostblack font-sans py-12">
       <div className="">
         <h2 className="hidden text-2xl dark:text-gray-200 font-bold font-sans text-gray-700 text-left mb-8">
-          Contact
+          Docs
         </h2>
         <div className="mx-auto pr-24 md:pr-0">
           <ul className="flex flex-col uppercase text-4xl sm:text-6xl md:text-5xl lg:text-6xl">
