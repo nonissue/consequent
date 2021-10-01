@@ -55,7 +55,18 @@ module.exports = {
   },
   plugins: [
     require("radix-colors-for-tailwind")({
-      colors: ["blue", "cyan", "lime", "crimson", "tomato", "red"],
+      colors: [
+        "blue",
+        "gray",
+        "cyan",
+        "lime",
+        "crimson",
+        "tomato",
+        "red",
+        "yellow",
+        "amber",
+        "orange",
+      ],
     }),
   ],
 };
