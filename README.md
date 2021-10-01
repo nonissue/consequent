@@ -7,6 +7,16 @@ Next.js starter with Typescript & Tailwind.css (feat. `next-themes` for dark mod
 ### Misc
 
 - [ ] Add docs
+  - [ ] Features
+    - [ ] TS
+    - [ ] ESLint
+    - [ ] Husky
+    - [ ] Themes
+    - [ ] `getLayout`
+  - [ ] Set up
+  - [ ] Usage
+- [x] Update `index`
+- [x] Add docs route
 - [ ] Add favicon, opengraph metadata, etc.
 - [x] Remove `providers` component
 - [ ] Add `Husky`
