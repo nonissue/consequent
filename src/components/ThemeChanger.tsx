@@ -15,27 +15,23 @@ export const ThemeChanger: React.FunctionComponent = () => {
   if (!mounted) return null;
 
   return (
-    <div className="">
-      <button
-        className="p-2 m-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-500 text-gray-600 border-0 border-gray-200 dark:border-gray-500 mr-1 dark:text-gray-300 bg-transparent dark:bg-transparent "
-        onClick={() => {
-          // for some reason, if theme is light, setTheme doesn't
-          // change theme to dark on first use unless we use the logic below
-          let nextTheme;
-          if (theme === "system") {
-            nextTheme = resolvedTheme === "light" ? "dark" : "light";
-          } else {
-            nextTheme = theme === "light" ? "dark" : "light";
-          }
+    <button
+      className="w-6 h-6 transition-all duration-500 text-radix-orange10 hover:text-radix-gray12"
+      onClick={() => {
+        // for some reason, if theme is light, setTheme doesn't
+        // change theme to dark on first use unless we use the logic below
+        let nextTheme;
+        if (theme === "system") {
+          nextTheme = resolvedTheme === "light" ? "dark" : "light";
+        } else {
+          nextTheme = theme === "light" ? "dark" : "light";
+        }
 
-          setTheme(nextTheme);
-        }}
-        aria-label="Theme Toggle"
-      >
-        <div className="w-6 h-6">
-          {theme === "light" ? <MoonIcon /> : <SunIcon />}
-        </div>
-      </button>
-    </div>
+        setTheme(nextTheme);
+      }}
+      aria-label="Theme Toggle"
+    >
+      {theme === "light" ? <MoonIcon /> : <SunIcon />}
+    </button>
   );
 };
