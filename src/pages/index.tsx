@@ -1,5 +1,6 @@
 import { NextPage } from "next/types";
 import Link from "next/link";
+import { ExternalLinkIcon, ArrowRightIcon } from "@heroicons/react/outline";
 import { getLayout } from "@/layouts/Layout";
 
 const IndexPage: NextPage & {
@@ -8,25 +9,27 @@ const IndexPage: NextPage & {
   return (
     <>
       <section className="leading-relaxed text-base text-gray-800 dark:text-gray-200">
-        <h3 className="text-2xl font-bold pb-4 text-gray-900 dark:text-gray-50">
-          Consequent: A Next.js starter
-        </h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis
-          egestas pretium aenean pharetra. Orci eu lobortis elementum nibh
-          tellus molestie. Vulputate dignissim suspendisse in est. Vel pharetra
-          vel turpis nunc. Malesuada nunc vel risus commodo. Nisi vitae suscipit
-          tellus mauris. Posuere morbi leo urna molestie at elementum eu. Urna
-          duis convallis convallis tellus. Urna molestie at elementum eu. Nunc
-          sed blandit libero volutpat.
-        </p>
-        <p className="pt-4">
-          <Link href="https://github.com/nonissue/consequent">
-            <a className="font-bold hover:text-radix-red10 transition-colors duration-200">
-              Github
+        <h5 className="text-center text-6xl font-bold mt-4">
+          A Next.js Starter
+        </h5>
+
+        <br />
+
+        <p className="max-w-sm mx-auto border p-2 sm:p-3 mt-10 shadow-sm rounded-sm border-radix-gray5 text-center ">
+          <Link href="/docs">
+            <a className="font-bold text-radix-gray12 text-base sm:text-lg hover:text-radix-red10 transition-colors duration-200">
+              Start with Docs
             </a>
           </Link>
+          <ArrowRightIcon className="w-4 h-4 inline-block -mt-1 ml-1" />
+        </p>
+        <p className="max-w-sm mx-auto border p-2 sm:p-3 mt-2 mb-8 shadow-sm rounded-sm border-radix-gray5 text-center ">
+          <Link href="https://github.com/nonissue/consequent">
+            <a className="font-bold text-base sm:text-lg hover:text-radix-red10 transition-colors duration-200">
+              View on Github
+            </a>
+          </Link>
+          <ExternalLinkIcon className="w-4 h-4 inline-block -mt-1 ml-1" />
         </p>
       </section>
     </>
