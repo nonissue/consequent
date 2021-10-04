@@ -1,7 +1,7 @@
 import Link from "next/link";
 // import { QuestionMarkCircleIcon } from "@heroicons/react/solid";
 import { QuestionMarkCircleIcon } from "@heroicons/react/outline";
-import { ThemeChanger } from "@/components";
+import { ThemeChanger } from "src/components";
 
 const Header = () => {
   return (

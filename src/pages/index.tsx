@@ -1,7 +1,7 @@
 import { NextPage } from "next/types";
 import Link from "next/link";
 import { ExternalLinkIcon, ArrowRightIcon } from "@heroicons/react/outline";
-import { getLayout } from "@/layouts/Layout";
+import { getLayout } from "src/layouts/Layout";
 
 const IndexPage: NextPage & {
   getLayout?: (component: JSX.Element) => JSX.Element;
