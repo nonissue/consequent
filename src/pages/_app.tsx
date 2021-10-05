@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/ban-types */
 import type { NextComponentType, NextPageContext } from "next";
-import { AppProps } from "next/app";
+import type { AppProps } from "next/app";
 import Head from "next/head";
 import { ThemeProvider } from "next-themes";
 import Inspect from "inspx";
@@ -18,13 +18,11 @@ type ComponentWithLayout<P> = NextComponentType<NextPageContext, any, P> & {
 };
 
 type AppPropsWithLayout<P = Record<string, unknown>> = AppProps<P> & {
+  // // eslint-disable-next-line @typescript-eslint/naming-convention
   Component: ComponentWithLayout<P> & { theme: string };
 };
 
-const MyApp: React.FunctionComponent<AppPropsWithLayout> = ({
-  Component,
-  pageProps,
-}) => {
+const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
   const getLayout = Component.getLayout || ((page) => page);
 
   return (
