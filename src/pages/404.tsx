@@ -2,7 +2,7 @@ import { getLayout } from "src/layouts/Layout";
 
 const Custom404 = () => (
   <section className="py-12">
-    <h3 className="drop-shadow text-8xl text-red-500 dark:text-red-500 font-black mb-3">
+    <h3 className="mb-3 text-8xl font-black text-red-500 dark:text-red-500 drop-shadow">
       404
     </h3>
 

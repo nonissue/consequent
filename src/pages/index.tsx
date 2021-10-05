@@ -1,4 +1,4 @@
-import { NextPage } from "next/types";
+import type { NextPage } from "next/types";
 import Link from "next/link";
 import { ExternalLinkIcon, ArrowRightIcon } from "@heroicons/react/outline";
 import { getLayout } from "src/layouts/Layout";
@@ -8,28 +8,28 @@ const IndexPage: NextPage & {
 } = () => {
   return (
     <>
-      <section className="leading-relaxed text-base text-gray-800 dark:text-gray-200">
-        <h5 className="text-center text-6xl font-bold mt-4">
+      <section className="text-base leading-relaxed text-gray-800 dark:text-gray-200">
+        <h5 className="mt-4 text-6xl font-bold text-center">
           A Next.js Starter
         </h5>
 
         <br />
 
-        <p className="max-w-sm mx-auto border p-2 sm:p-3 mt-10 shadow-sm rounded-sm border-radix-gray5 text-center ">
+        <p className="p-2 sm:p-3 mx-auto mt-10 max-w-sm text-center rounded-sm border border-radix-gray5 shadow-sm">
           <Link href="/docs">
-            <a className="font-bold text-radix-gray12 text-base sm:text-lg hover:text-radix-red10 transition-colors duration-200">
+            <a className="text-base sm:text-lg font-bold text-radix-gray12 hover:text-radix-red10 transition-colors duration-200">
               Start with Docs
             </a>
           </Link>
-          <ArrowRightIcon className="w-4 h-4 inline-block -mt-1 ml-1" />
+          <ArrowRightIcon className="inline-block -mt-1 ml-1 w-4 h-4" />
         </p>
-        <p className="max-w-sm mx-auto border p-2 sm:p-3 mt-2 mb-8 shadow-sm rounded-sm border-radix-gray5 text-center ">
+        <p className="p-2 sm:p-3 mx-auto mt-2 mb-8 max-w-sm text-center rounded-sm border border-radix-gray5 shadow-sm">
           <Link href="https://github.com/nonissue/consequent">
-            <a className="font-bold text-base sm:text-lg hover:text-radix-red10 transition-colors duration-200">
+            <a className="text-base sm:text-lg font-bold hover:text-radix-red10 transition-colors duration-200">
               View on Github
             </a>
           </Link>
-          <ExternalLinkIcon className="w-4 h-4 inline-block -mt-1 ml-1" />
+          <ExternalLinkIcon className="inline-block -mt-1 ml-1 w-4 h-4" />
         </p>
       </section>
     </>
@@ -38,4 +38,5 @@ const IndexPage: NextPage & {
 
 IndexPage.getLayout = getLayout;
 
+// eslint-disable-next-line import/no-default-export
 export default IndexPage;

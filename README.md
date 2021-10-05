@@ -15,6 +15,8 @@ Next.js starter with Typescript & Tailwind.css (feat. `next-themes` for dark mod
     - [ ] `getLayout`
   - [ ] Set up
   - [ ] Usage
+- [ ] Add `react-error-boundary`
+  - [ ] https://github.com/lightsound/nexst-tailwind/tree/main/src/layout
 - [x] Update `index`
 - [x] Add docs route
 - [ ] Add favicon, opengraph metadata, etc.
@@ -28,7 +30,7 @@ Next.js starter with Typescript & Tailwind.css (feat. `next-themes` for dark mod
   - [ ] Remove custom `context` implementation currently being used
 - [ ] Cleanup `eslint` config
 - [ ] Figure out color preview for radix-colors
-- [ ] Fix paths in `tsconfig.json`
+- [x] Fix paths in `tsconfig.json`
   - Just use relative imports?
 - [x] ~~Use `data/site.config.json` in `Header`~~
   - [x] Removed altogether

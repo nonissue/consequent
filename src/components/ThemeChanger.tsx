@@ -16,7 +16,7 @@ export const ThemeChanger: React.FunctionComponent = () => {
 
   return (
     <button
-      className="w-6 h-6 transition-all duration-500 text-radix-orange10 hover:text-radix-gray12"
+      className="w-6 h-6 text-radix-orange10 hover:text-radix-gray12 transition-all duration-500"
       onClick={() => {
         // for some reason, if theme is light, setTheme doesn't
         // change theme to dark on first use unless we use the logic below

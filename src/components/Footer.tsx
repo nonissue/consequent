@@ -2,12 +2,12 @@
 
 const Footer = () => {
   return (
-    <div className="z-0 bottom-0 static flex flex-col  justify-start  px-6 md:px-8 max-w-3xl mx-auto mb-8 ">
-      <div className="text-center capitalize font-bold leading-relaxed border-0 border-gray-300 bg-opacity-100 text-almostblack dark:text-gray-50 dark:border-gray-600 ">
+    <div className="flex static bottom-0 z-0 flex-col justify-start px-6 md:px-8 mx-auto mb-8 max-w-3xl">
+      <div className="font-bold leading-relaxed text-center text-almostblack dark:text-gray-50 capitalize bg-opacity-100 border-0 border-gray-300 dark:border-gray-600">
         <span
           role="img"
           aria-label="100 emoji"
-          className="h-5 leading-5 text-sm inline-block filter grayscale dark:invert"
+          className="inline-block h-5 text-sm leading-5 filter grayscale dark:invert"
         >
           💯
         </span>

@@ -18,7 +18,7 @@ type ComponentWithLayout<P> = NextComponentType<NextPageContext, any, P> & {
 };
 
 type AppPropsWithLayout<P = Record<string, unknown>> = AppProps<P> & {
-  // // eslint-disable-next-line @typescript-eslint/naming-convention
+  // eslint-disable-next-line @typescript-eslint/naming-convention
   Component: ComponentWithLayout<P> & { theme: string };
 };
 
