@@ -5,11 +5,11 @@ import { ThemeChanger } from "src/components";
 
 const Header = () => {
   return (
-    <div className="z-10 relative shadow-sm">
-      <div className="relative z-20 inset-0">
-        <div className="max-w-3xl mx-auto flex px-6 py-4 sm:px-6 lg:px-8 lg:py-4 inset-0 ">
-          <div className="relative flex items-center space-between w-full">
-            <div className="flex-grow text-md sm:text-xl md:text-xl text-almostblack dark:text-gray-50">
+    <div className="relative z-10 shadow-sm">
+      <div className="relative inset-0 z-20">
+        <div className="flex inset-0 py-4 lg:py-4 px-6 sm:px-6 lg:px-8 mx-auto max-w-3xl">
+          <div className="flex relative items-center w-full">
+            <div className="flex-grow text-base sm:text-xl md:text-xl text-almostblack dark:text-gray-50">
               <Link href="/">
                 <a className="tracking-normal text-radix-gray12 opacity-80">
                   <span className="font-light">consequent</span>
@@ -19,8 +19,8 @@ const Header = () => {
             <div className="flex items-center space-x-4 ">
               <Link href="/docs">
                 <a
-                  className=" text-radix-gray12  w-6 h-6 transition-all duration-300 fill-current
-                            hover:text-radix-blue10"
+                  className="                            hover:text-radix-blue10
+ text-radix-gray12  w-6 h-6 transition-all duration-300 fill-current"
                 >
                   <QuestionMarkCircleIcon />
                 </a>
