@@ -12,7 +12,9 @@ const Header = () => {
             <div className="flex-grow text-base sm:text-xl md:text-xl text-almostblack dark:text-gray-50">
               <Link href="/">
                 <a className="tracking-normal text-radix-gray12 opacity-80">
-                  <span className="font-light">consequent</span>
+                  <span className="font-mono text-xl sm:text-3xl tracking-widest font-normal uppercase">
+                    consequent
+                  </span>
                 </a>
               </Link>
             </div>

@@ -8,13 +8,43 @@ const IndexPage: NextPage & {
 } = () => {
   return (
     <>
-      <section className="text-base leading-relaxed text-gray-800 dark:text-gray-200">
-        <h5 className="mt-4 text-6xl font-bold text-center">
-          A Next.js Starter
+      <section className="text-xl leading-loose text-gray-800 dark:text-gray-200">
+        {/* <div className="mb-2 font-mono text-xl sm:text-3xl tracking-widest font-normal not-italic uppercase  text-center">
+          Consequent
+        </div> */}
+        <h5 className="mb-8 sm:mb-12 text-4xl sm:text-5xl tracking-tight italic font-black">
+          Next.js Starter
         </h5>
-
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis
+          egestas pretium aenean pharetra. Orci eu lobortis elementum nibh
+          tellus molestie. Vulputate dignissim suspendisse in est. Vel pharetra
+          vel turpis nunc. Malesuada nunc vel risus commodo.
+        </p>
         <br />
-
+        <p>
+          Nisi vitae suscipit tellus mauris. Posuere morbi leo urna molestie at
+          elementum eu. Urna duis convallis convallis tellus. Urna molestie at
+          elementum eu. Nunc sed blandit libero volutpat. Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Turpis egestas pretium aenean pharetra.
+        </p>
+        <p>
+          Orci eu lobortis elementum nibh tellus molestie. Vulputate dignissim
+          suspendisse in est. Vel pharetra vel turpis nunc. Malesuada nunc vel
+          risus commodo. Nisi vitae suscipit tellus mauris. Posuere morbi leo
+          urna molestie at elementum eu. Urna duis convallis convallis tellus.
+          Urna molestie at elementum eu. Nunc sed blandit libero volutpat. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Turpis egestas
+          pretium aenean pharetra. Orci eu lobortis elementum nibh tellus
+          molestie. Vulputate dignissim suspendisse in est. Vel pharetra vel
+          turpis nunc. Malesuada nunc vel risus commodo. Nisi vitae suscipit
+          tellus mauris. Posuere morbi leo urna molestie at elementum eu. Urna
+          duis convallis convallis tellus. Urna molestie at elementum eu. Nunc
+          sed blandit libero volutpat.
+        </p>
         <p className="p-2 sm:p-3 mx-auto mt-10 max-w-sm text-center rounded-sm border border-radix-gray5 shadow-sm">
           <Link href="/docs">
             <a className="text-base sm:text-lg font-bold text-radix-gray12 hover:text-radix-red10 transition-colors duration-200">
