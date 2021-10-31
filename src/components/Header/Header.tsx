@@ -11,20 +11,32 @@ const Header = () => {
           <div className="flex relative items-center w-full">
             <div className="flex-grow text-base sm:text-xl md:text-xl text-almostblack dark:text-gray-50">
               <Link href="/">
-                <a className="tracking-normal text-radix-gray12 opacity-80">
-                  <span className="font-mono text-xl sm:text-3xl tracking-widest font-normal uppercase">
+                <a className="tracking-normal text-radix-gray12 opacity-90">
+                  <span className="font-mono text-xl sm:text-2xl tracking-widest font-normal uppercase">
                     consequent
                   </span>
                 </a>
               </Link>
             </div>
-            <div className="flex items-center space-x-4 ">
+            <div className="flex items-center space-x-2">
               <Link href="/docs">
-                <a
-                  className="                            hover:text-radix-blue10
- text-radix-gray12  w-6 h-6 transition-all duration-300 fill-current"
-                >
+                <a className="hover:text-radix-blue12 text-radix-gray12 w-7 h-7 transition-all duration-300 fill-current">
                   <QuestionMarkCircleIcon />
+                  {/* <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-7 h-7"
+                    viewBox="0 0 24 24"
+                    strokeWidth="2"
+                    stroke="currentColor"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <circle cx={12} cy={12} r={9}></circle>
+                    <line x1={12} y1={17} x2={12} y2="17.01"></line>
+                    <path d="M12 13.5a1.5 1.5 0 0 1 1 -1.5a2.6 2.6 0 1 0 -3 -4"></path>
+                  </svg> */}
                 </a>
               </Link>
 

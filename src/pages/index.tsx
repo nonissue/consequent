@@ -8,29 +8,29 @@ const IndexPage: NextPage & {
 } = () => {
   return (
     <>
-      <section className="text-xl leading-loose text-gray-800 dark:text-gray-200">
+      <section className="text-base leading-relaxed sm:leading-relaxed divide-dotted divide-y divide-radix-gray7 text-gray-600 dark:text-gray-300">
         {/* <div className="mb-2 font-mono text-xl sm:text-3xl tracking-widest font-normal not-italic uppercase  text-center">
           Consequent
         </div> */}
-        <h5 className="mb-8 sm:mb-12 text-4xl sm:text-5xl tracking-tight italic font-black">
+        <h5 className="text-gray-700 dark:text-gray-200 mb-8 sm:mb-12 text-4xl sm:text-5xl tracking-tight italic font-black">
           Next.js Starter
         </h5>
-        <p>
+        <p className="py-8">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis
           egestas pretium aenean pharetra. Orci eu lobortis elementum nibh
           tellus molestie. Vulputate dignissim suspendisse in est. Vel pharetra
           vel turpis nunc. Malesuada nunc vel risus commodo.
         </p>
-        <br />
-        <p>
+        {/* <br /> */}
+        <p className="py-8">
           Nisi vitae suscipit tellus mauris. Posuere morbi leo urna molestie at
           elementum eu. Urna duis convallis convallis tellus. Urna molestie at
           elementum eu. Nunc sed blandit libero volutpat. Lorem ipsum dolor sit
           amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et dolore magna aliqua. Turpis egestas pretium aenean pharetra.
         </p>
-        <p>
+        <p className="py-8">
           Orci eu lobortis elementum nibh tellus molestie. Vulputate dignissim
           suspendisse in est. Vel pharetra vel turpis nunc. Malesuada nunc vel
           risus commodo. Nisi vitae suscipit tellus mauris. Posuere morbi leo

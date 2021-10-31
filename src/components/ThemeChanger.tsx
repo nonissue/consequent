@@ -16,7 +16,7 @@ export const ThemeChanger: React.FunctionComponent = () => {
 
   return (
     <button
-      className="w-6 h-6 text-radix-orange10 hover:text-radix-gray12 transition-all duration-500"
+      className="w-7 h-7 text-radix-gray9 hover:text-radix-orange11 transition-all duration-500"
       onClick={() => {
         // for some reason, if theme is light, setTheme doesn't
         // change theme to dark on first use unless we use the logic below
@@ -31,7 +31,11 @@ export const ThemeChanger: React.FunctionComponent = () => {
       }}
       aria-label="Theme Toggle"
     >
-      {theme === "light" ? <MoonIcon /> : <SunIcon />}
+      {theme === "light" ? (
+        <MoonIcon className="w-7 h-7" />
+      ) : (
+        <SunIcon className="w-7 h-7" />
+      )}
     </button>
   );
 };
