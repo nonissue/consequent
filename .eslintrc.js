@@ -43,6 +43,7 @@ module.exports = {
     "react/display-name": "error",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
+    "tailwindcss/classnames-order": "off",
   },
   settings: {
     "import/resolver": {

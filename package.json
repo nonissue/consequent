@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.3",
-    "next": "^11.1.0",
+    "next": "^12.0.1",
     "next-themes": "0.0.15",
     "radix-colors-for-tailwind": "^2.0.0",
     "react": "^17.0.2",

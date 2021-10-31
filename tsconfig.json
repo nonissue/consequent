@@ -7,7 +7,10 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "lib": ["dom", "es2017"],
+    "lib": [
+      "dom",
+      "es2017"
+    ],
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
@@ -18,6 +21,7 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "esnext",
+    "incremental": true
   },
   "exclude": [
     "node_modules",
@@ -27,5 +31,10 @@
     "out",
     "husky"
   ],
-  "include": ["**/*.ts", "**/*.tsx", "./.eslintrc.js"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "./.eslintrc.js",
+    "./*.js"
+  ]
 }
