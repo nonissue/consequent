@@ -12,7 +12,7 @@ const Header = () => {
             <div className="flex-grow text-base sm:text-xl md:text-xl text-almostblack dark:text-gray-50">
               <Link href="/">
                 <a className="tracking-normal text-radix-gray12 opacity-90">
-                  <span className="font-mono text-xl sm:text-2xl tracking-widest font-normal uppercase">
+                  <span className="font-mono text-2xl sm:text-2xl tracking-widest font-semibold uppercase">
                     consequent
                   </span>
                 </a>
@@ -20,7 +20,7 @@ const Header = () => {
             </div>
             <div className="flex items-center space-x-2">
               <Link href="/docs">
-                <a className="hover:text-radix-blue12 text-radix-gray12 w-7 h-7 transition-all duration-300 fill-current">
+                <a className="hover:text-radix-blue12 text-radix-gray11 w-6 h-6 transition-all duration-300 fill-current">
                   <QuestionMarkCircleIcon />
                   {/* <svg
                     xmlns="http://www.w3.org/2000/svg"

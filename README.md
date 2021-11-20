@@ -2,6 +2,12 @@
 
 Next.js starter with Typescript & Tailwind.css (feat. `next-themes` for dark mode).
 
+## Issues
+
+- [ ] `bg-opacity-x` utils don't work with custom radix colors
+  - [ ] That said, using radix colors plugins means we automatically get theming w/ light / dark
+- [ ] custom radix colors don't get inline color previews in VSCode
+
 ## Tasks
 
 ### Misc
